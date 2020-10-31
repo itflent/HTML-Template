@@ -1,0 +1,82 @@
+.top-head-bg.bg.bg_darken(data-src="/img/unsplash-photo.jpg")
+  h1 HTML5 - Шаблон для разработки
+.container
+  section.uses(data-title="Что используется")
+    h3 Что использует шаблон
+    ul
+      li Gulp - сборщик проекта
+      li Pug - вместо html
+      li Sass/SCSS - вместо css
+      li Grid System - модульная сетка
+      li Fontawesome - иконки сайта
+  hr
+  section.mixins(data-title="Миксины")
+    h3 Готовые миксины
+    ul
+      li +font | @include font - для подключения шрифтов
+      li +margin-v | @include margin-v - для создания вертикальных отступов
+      li +margin-h | @include margin-h - для создания горизонтальных отступов
+      li +placeholders | @include placeholders - для быстрой стилизации плейсхолдеров под все браузеры
+      li +before('content') | @include before('content') - замена стандартному ::before
+      li +after('content') | @include after('content') - замена стандартному ::after
+      li +first | @include first - изменение первого элемента
+      li +last | @include last - изменение последнего элемента
+      li +nth | @include nth - изменение элемента по счету
+  hr
+  section.fonts(data-title="Шрифты")
+    h3 Используемые шрифты:
+    ul
+      li Montserrat Regular 
+      li Montserrat Bold 
+  hr
+  section.colors(data-title="Цвета")
+    h3 Используемые цвета:
+    ul
+      li белый #fff
+      li черный #000
+      li светло-серый #888
+      li серый #555
+      li темно-серый #333
+      li красный #eb3c27
+      li зеленый #85bb65
+      li синий #182cc5
+      li индиго #6a0eac
+  hr
+  section.headlines(data-title="Загаловки")
+    h1 Загаловок сайта - 40px
+    h2 Загаловок сайта - 32px
+    h3 Загаловок сайта - 28px
+    h4 Загаловок сайта - 24px
+    h5 Загаловок сайта - 20px
+    h6 Загаловок сайта - 16px
+  hr
+  section.images(data-title="Изображения")
+    h3 Виды изображений:
+    ul
+      li .bg(data-src="Путь") - задний фон на всю высоту и длину блока
+      li .lazy(data-src="Путь") - ленивая загрузка
+      li .svg(data-src="Путь") - смена цвета svg
+  hr
+  section.navigation(data-title="Навигация по шаблону")
+    h3 Навигация по шаблону:
+    pre.
+      / - Корень
+      /app/ - папка разработки
+      /app/img - папка не сжатых изображений
+      /app/js - папка javascript'a для разработки
+      /app/pages/layouts - шаблоны (Не компилируются)
+      /app/pages/*.pug - страницы сайта для разработки
+      /app/sass/utils - разбивание стилей по файлам (Не компилируются)
+      /app/sass/_*.sass стили страницы (Не компилируются)
+      /app/sass/*.sass - стили страницы для разработки
+      /build/ - папка собранного проекта
+      /build/css - готовые стили
+      /build/fonts - шрифты сайта
+      /build/img/ - папка сжатых изображений
+      /build/img/icons/ - папка иконок
+      /build/js - папка javascript'a
+      /build/*.html - страницы сайта
+      /node_modules - модули node.js
+      /.browserlistrc - для модуля gulp-autoprefixer
+      /gulpfile.js - сборщик проекта
+      /package.json - инфо о всем

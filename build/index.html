@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="QS - Quick Start">
+  <link rel="shortcut icon" href="img/icons/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="css/grid.min.css">
+  <link rel="stylesheet" href="css/style.min.css">
+  <title>HTML5 - Шаблон для разработки</title>
+</head>
+
+<body class="body">
+  <div class="top-head-bg bg bg_darken" data-src="/img/unsplash-photo.jpg">
+    <h1>HTML5 - Шаблон для разработки</h1>
+  </div>
+  <div class="container">
+    <section class="uses" data-title="Что используется">
+      <h3>Что использует шаблон</h3>
+      <ul>
+        <li>Gulp - сборщик проекта</li>
+        <li>Pug - вместо html</li>
+        <li>Sass/SCSS - вместо css</li>
+        <li>Grid System - модульная сетка</li>
+        <li>Fontawesome - иконки сайта</li>
+      </ul>
+    </section>
+    <hr>
+    <section class="mixins" data-title="Миксины">
+      <h3>Готовые миксины</h3>
+      <ul>
+        <li>+font | @include font - для подключения шрифтов</li>
+        <li>+margin-v | @include margin-v - для создания вертикальных отступов</li>
+        <li>+margin-h | @include margin-h - для создания горизонтальных отступов</li>
+        <li>+placeholders | @include placeholders - для быстрой стилизации плейсхолдеров под все браузеры</li>
+        <li>+before('content') | @include before('content') - замена стандартному ::before</li>
+        <li>+after('content') | @include after('content') - замена стандартному ::after</li>
+        <li>+first | @include first - изменение первого элемента</li>
+        <li>+last | @include last - изменение последнего элемента</li>
+        <li>+nth | @include nth - изменение элемента по счету</li>
+      </ul>
+    </section>
+    <hr>
+    <section class="fonts" data-title="Шрифты">
+      <h3>Используемые шрифты:</h3>
+      <ul>
+        <li>Montserrat Regular </li>
+        <li>Montserrat Bold </li>
+      </ul>
+    </section>
+    <hr>
+    <section class="colors" data-title="Цвета">
+      <h3>Используемые цвета:</h3>
+      <ul>
+        <li>белый #fff</li>
+        <li>черный #000</li>
+        <li>светло-серый #888</li>
+        <li>серый #555</li>
+        <li>темно-серый #333</li>
+        <li>красный #eb3c27</li>
+        <li>зеленый #85bb65</li>
+        <li>синий #182cc5</li>
+        <li>индиго #6a0eac</li>
+      </ul>
+    </section>
+    <hr>
+    <section class="headlines" data-title="Загаловки">
+      <h1>Загаловок сайта - 40px</h1>
+      <h2>Загаловок сайта - 32px</h2>
+      <h3>Загаловок сайта - 28px</h3>
+      <h4>Загаловок сайта - 24px</h4>
+      <h5>Загаловок сайта - 20px</h5>
+      <h6>Загаловок сайта - 16px</h6>
+    </section>
+    <hr>
+    <section class="images" data-title="Изображения">
+      <h3>Виды изображений:</h3>
+      <ul>
+        <li>.bg(data-src="Путь") - задний фон на всю высоту и длину блока</li>
+        <li>.lazy(data-src="Путь") - ленивая загрузка</li>
+        <li>.svg(data-src="Путь") - смена цвета svg</li>
+      </ul>
+    </section>
+    <hr>
+    <section class="navigation" data-title="Навигация по шаблону">
+      <h3>Навигация по шаблону:</h3>
+      <pre>/ - Корень
+/app/ - папка разработки
+/app/img - папка не сжатых изображений
+/app/js - папка javascript'a для разработки
+/app/pages/layouts - шаблоны (Не компилируются)
+/app/pages/*.pug - страницы сайта для разработки
+/app/sass/utils - разбивание стилей по файлам (Не компилируются)
+/app/sass/_*.sass стили страницы (Не компилируются)
+/app/sass/*.sass - стили страницы для разработки
+/build/ - папка собранного проекта
+/build/css - готовые стили
+/build/fonts - шрифты сайта
+/build/img/ - папка сжатых изображений
+/build/img/icons/ - папка иконок
+/build/js - папка javascript'a
+/build/*.html - страницы сайта
+/node_modules - модули node.js
+/.browserlistrc - для модуля gulp-autoprefixer
+/gulpfile.js - сборщик проекта
+/package.json - инфо о всем</pre>
+    </section>
+  </div>
+  <script src="//kit.fontawesome.com/75cf6d0aef.js"></script>
+  <script src="js/libs/jquery.js"></script>
+  <script src="js/libs/jquery.lazy.js"></script>
+  <script src="js/script.js"></script>
+</body>
+
+</html>

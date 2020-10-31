@@ -1,0 +1,12 @@
+{
+  "name": "quick-g",
+  "version": "4.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "global": "npm i -g gulp gulp-sass gulp-pug gulp-autoprefixer gulp-pretty-html gulp-rename gulp-clean-css gulp-plumber gulp-imagemin browser-sync",
+    "link": "npm ln gulp gulp-sass gulp-pug gulp-autoprefixer gulp-pretty-html gulp-rename gulp-clean-css gulp-plumber gulp-imagemin browser-sync"
+  },
+  "author": "",
+  "license": "ISC"
+}

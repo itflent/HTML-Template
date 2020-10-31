@@ -1,0 +1,57 @@
+@mixin font($--name, $--src, $--weight)
+  @font-face 
+    src: local($--name), url($--src)
+    font-weight: $--weight
+    font-family: $--name
+
+// ! Margins
+@mixin margin-v($indent)
+  margin: calc(#{$indent} / 2) 0
+  &:first-child
+    margin-top: 0
+  &:last-child
+    margin-bottom: 0
+
+@mixin margin-h($indent)
+  margin: 0 calc(#{$indent} / 2)
+  &:first-child
+    margin-left: 0
+  &:last-child
+    margin-right: 0
+
+// ! Other
+@mixin placeholders
+  &::placeholder
+    @content
+  &:-moz-placeholder
+    @content
+  &::-moz-placeholder
+    @content
+  &:-ms-input-placeholder
+    @content
+  &::-webkit-input-placeholder
+    @content
+
+// ! Pseudo
+@mixin before($content)
+  &::before
+    content: $content
+    @content
+
+@mixin after($content)
+  &::after
+    content: $content
+    @content
+
+// ! Position
+@mixin first()
+  &:first-child
+    @content
+
+@mixin last()
+  &:last-child
+    @content
+
+@mixin nth($nth)
+  &:nth-child($nth)
+    @content
