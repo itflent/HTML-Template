@@ -1,0 +1,13 @@
+{
+  "name": "html-template",
+  "version": "1.1.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "global": "npm install -g gulp gulp-sass gulp-pug gulp-autoprefixer gulp-pretty-html gulp-htmlmin gulp-uglify-es gulp-clean-css gulp-imagemin browser-sync",
+    "link": "npm link gulp gulp-sass gulp-pug gulp-autoprefixer gulp-pretty-html gulp-htmlmin gulp-uglify-es gulp-clean-css gulp-imagemin browser-sync",
+    "compile": "gulp compile"
+  },
+  "author": "",
+  "license": "ISC"
+}
