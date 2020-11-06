@@ -1,0 +1,79 @@
+@mixin font($name, $src, $weight)
+  @font-face 
+    src: local($name), url($src + '.ttf')
+    src: local($name), url($src + '.woff')
+    // src: local($name), url($src + '.eot')
+    font-weight: $weight
+    font-family: $name
+
+@mixin margin-v($indent)
+  margin: calc(#{$indent} / 2) 0
+  &:first-child
+    margin-top: 0
+  &:last-child
+    margin-bottom: 0
+
+@mixin margin-h($indent)
+  margin: 0 calc(#{$indent} / 2)
+  &:first-child
+    margin-left: 0
+  &:last-child
+    margin-right: 0
+
+@mixin placeholders
+  &::placeholder
+    @content
+  &:-moz-placeholder
+    @content
+  &::-moz-placeholder
+    @content
+  &:-ms-input-placeholder
+    @content
+  &::-webkit-input-placeholder
+    @content
+
+@mixin before($content)
+  &::before
+    content: $content
+    @content
+
+@mixin after($content)
+  &::after
+    content: $content
+    @content
+
+@mixin first()
+  &:first-child
+    @content
+
+@mixin last()
+  &:last-child
+    @content
+
+@mixin nth($nth)
+  &:nth-child($nth)
+    @content
+
+// display: flex; justify-content: center; align-items: center;
+// +flex(jcc', 'aic')
+@mixin flex($jc, $ai)
+  display: flex
+  @if $jc == 'jc-n'
+    justify-content: normal
+  @if $jc == 'jc-fs'
+    justify-content: flex-start
+  @if $jc == 'jc-fe'
+    justify-content: flex-end
+  @if $jc == 'jc-c'
+    justify-content: center
+  @if $jc == 'jc-sb'
+    justify-content: space-between
+
+  @if $ai == 'ai-n'
+    align-items: normal
+  @if $ai == 'ai-fs'
+    align-items: flex-start
+  @if $ai == 'ai-c'
+    align-items: center
+  @if $ai == 'ai-fe'
+    align-items: flex-end

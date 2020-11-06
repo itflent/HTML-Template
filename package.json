@@ -1,0 +1,13 @@
+{
+  "name": "html-template",
+  "version": "1.2.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "global": "npm install -g gulp gulp-sass gulp-pug gulp-autoprefixer gulp-pretty-html gulp-htmlmin gulp-uglify-es gulp-plumber gulp-imagemin browser-sync gulp-fonter gulp-replace gulp-csscomb fs",
+    "link": "npm link gulp gulp-sass gulp-pug gulp-autoprefixer gulp-pretty-html gulp-htmlmin gulp-uglify-es gulp-plumber gulp-imagemin browser-sync gulp-fonter gulp-replace gulp-csscomb fs",
+    "compile": "gulp prod"
+  },
+  "author": "",
+  "license": "ISC"
+}

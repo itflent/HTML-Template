@@ -1,0 +1,61 @@
+*
+  margin: 0
+  padding: 0
+  float: none !important
+
+*, *::after, *::before
+  box-sizing: border-box
+
+input, textarea, select, button, option, code, pre
+  font-family: inherit
+  font-weight: inherit
+
+input, textarea, select, button
+  display: block 
+  background: var(--body-background)
+  color: var(--body-color)
+  outline: none
+  border: none
+  border: 1px solid var(--reset-color)
+
+input, label
+  display: inline-block
+
+input[placeholder]
+  +placeholders
+    color: var(--reset-color)
+    opacity: 1
+
+ul, ol
+  padding: 0px
+
+ul, ol > li, li
+  list-style: none
+
+textarea
+  resize: none
+ 
+select
+  appearance: none !important
+  cursor: pointer
+
+a
+  display: inline-block
+  font-family: inherit 
+  text-decoration: none 
+  color: var(--body-color)
+
+hr
+  border: none
+  border-bottom: 1px solid var(--reset-color)
+  outline: none
+  opacity: .3
+
+img
+  max-width: 100%
+  display: block
+  object-fit: cover
+
+.row
+  margin-right: 0
+  margin-left: 0

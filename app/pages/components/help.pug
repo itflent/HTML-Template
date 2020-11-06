@@ -1,0 +1,88 @@
+.help.js-help(data-none)
+  ul.help-list
+    li.help-list__item
+      a.help-list__link(href="//fontawesome.com", target='_blank')
+        i.help-list__icon.fab.fa-font-awesome
+        span.help-list__name Fontawesome
+    li.help-list__item
+      a.help-list__link(href="//fonts.google.com", target='_blank')
+        i.help-list__icon.fas.fa-font
+        span.help-list__name Google fonts
+    li.help-list__item
+      a.help-list__link(href="//unsplash.com", target='_blank')
+        i.help-list__icon.fab.fa-unsplash
+        span.help-list__name Unsplash
+    li.help-list__item
+      a.help-list__link(href="//developer.mozilla.org/", target='_blank')
+        i.help-list__icon.fab.fa-firefox
+        span.help-list__name Mozilla developers
+  .help-text
+    h6.help-text__title *Пожалуйста не забудь удалить при компиляции
+
+style.
+  .help {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    background: #ffffff60;
+  }
+
+  .help[data-none] { display: none; }
+
+  .help-list {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .help-list__item {
+    padding: 10px;
+    margin: calc(10px / 2) 0;
+  }
+
+  .help-list__item:first-child {
+    margin-top: 0;
+  }
+
+  .help-list__item:last-child {
+    margin-bottom: 0;
+  }
+
+  .help-list__link {
+    display: flex;
+    align-items: center;
+  }
+
+  .help-list__link:hover .help-list__name {
+    transform: translateX(0);
+  }
+
+  .help-list__icon {
+    display: block;
+    width: 36px;
+    font-size: 36px;
+  }
+
+  .help-list__name {
+    margin-left: 20px;
+    transform: translateX(-300%);
+    transition: 0.3s;
+  }
+
+  .help-text {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+  }
+
+script.
+  document.addEventListener('keydown', (e) => {
+    const help = document.querySelector('.js-help')
+    if(e.code == 'KeyH')
+      help.toggleAttribute('data-none')
+  })
+  

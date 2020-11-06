@@ -1,0 +1,11 @@
+:root{
+  --reset-color: #555;
+}
+
+:root[data-theme="default"]{
+  --body-background: #fff;
+  --body-color: #111;
+}
+
+$font-family-1: 'Montserrat';
+$font-family-2: sans-serif;
